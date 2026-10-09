@@ -1,0 +1,16 @@
+{
+  "name": "I Ching Oracle - Book of Changes",
+  "short_name": "I Ching",
+  "description": "Authentic I Ching Oracle with classical coin casting, 64 hexagrams, and changing lines guidance.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0a09",
+  "theme_color": "#d97706",
+  "icons": [
+    {
+      "src": "/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

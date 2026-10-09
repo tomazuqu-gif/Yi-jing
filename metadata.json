@@ -1,0 +1,8 @@
+{
+  "name": "Synchronicity Awareness Practice (Yijing)",
+  "description": "Synchronicity Awareness Practice (Yijing) - Authentic coin casting, hexagram interpretation, changing lines, and presence session.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
