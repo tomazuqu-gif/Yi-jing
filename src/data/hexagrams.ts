@@ -358,17 +358,17 @@ export const HEXAGRAMS: Record<number, HexagramData> = {
     },
   },
   26: {
-    name: "Great Accumulation",
-    subtitle: "Taming Force",
-    description: "Taming the Great represents possessing great power and managing it wisely. True power is not about dominance but about mastering ourselves. Heaven's energy rests within the mountain—wisdom contained within strength.",
-    judgment: "Taming Force (or Great Accumulation). Beneficial to persevere. Avoid eating at home; it is auspicious. Advantageous to cross great rivers.",
+    name: "Great Accumulates",
+    subtitle: "Nourishment from the Great",
+    description: "Great Accumulates. True strength and vigor are a confident heart, which naturally radiates light. Review your integrity daily. Power rises while honouring virtue. It is able to restrain what is forceful. This is great integrity. Not eating at home brings good fortune, it nourishes the right people. Crossing great rivers aligns with Heaven's will.",
+    judgment: "What is Great nourishes: beneficial to remain in this. Not the householder's usual sustenance — this is harmony. Continue great transformation.",
     lines: {
       1: "There is harsh strictness, favorable to temper oneself.",
-      2: "The carriage’s yoke/strap is set so the wheel fits.",
+      2: "The carriage yoke/strap is set so the wheel fits.",
       3: "Noble action in pursuit. Challenging integrity brings benefit. It is said: restrain the carriage and guard well. Favorable to remain clear about your direction.",
       4: "A young ox with a yoke, brings great good fortune.",
       5: "The tusk of a castrated boar. Auspicious.",
-      6: "Following the originating power (lit. heaven), smooth.",
+      6: "Following the originating power (lit. following Heaven), smooth.",
     },
   },
   27: {

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="100%" stop-color="#0c0a09"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="236" fill="none" stroke="url(#gold)" stroke-width="6" opacity="0.4"/>
+  
+  <!-- Outer Taiji / Bagua ring -->
+  <circle cx="256" cy="256" r="160" fill="#18181b" stroke="url(#gold)" stroke-width="8"/>
+  
+  <!-- Yin Yang symbol -->
+  <!-- White (light) half -->
+  <path d="M 256 96 A 160 160 0 0 1 256 416 A 80 80 0 0 1 256 256 A 80 80 0 0 0 256 96 Z" fill="#fafaf9"/>
+  <!-- Dark half (background of circle is already #18181b) -->
+  <circle cx="256" cy="176" r="26" fill="#18181b"/>
+  <circle cx="256" cy="336" r="26" fill="#fafaf9"/>
+
+  <!-- Trigram decorative markings (Qian heaven - 3 solid lines, Kun earth - 3 broken lines) -->
+  <!-- Top: Qian (3 solid lines) -->
+  <line x1="216" y1="50" x2="296" y2="50" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
+  <line x1="216" y1="62" x2="296" y2="62" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
+  <line x1="216" y1="74" x2="296" y2="74" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Bottom: Kun (3 broken lines) -->
+  <line x1="216" y1="438" x2="250" y2="438" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
+  <line x1="262" y1="438" x2="296" y2="438" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
+  <line x1="216" y1="450" x2="250" y2="450" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
+  <line x1="262" y1="450" x2="296" y2="450" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
+  <line x1="216" y1="462" x2="250" y2="462" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
+  <line x1="262" y1="462" x2="296" y2="462" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
+</svg>

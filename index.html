@@ -2,13 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <title>Synchronicity Awareness Practice (Yijing)</title>
-    <meta name="description" content="Synchronicity Awareness Practice (Yijing) - Authentic coin casting, hexagram interpretation, changing lines, and presence session." />
-    <meta property="og:title" content="Synchronicity Awareness Practice (Yijing)" />
-    <meta property="og:description" content="Synchronicity Awareness Practice (Yijing) - Authentic coin casting, hexagram interpretation, changing lines, and presence session." />
+    <meta name="description" content="Synchronicity Awareness Practice (Yijing) - Authentic coin casting, 64 hexagrams interpretation, changing lines guidance, and presence session." />
+    
+    <!-- PWA & Mobile Web App Meta -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#111827" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Yijing App" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- OpenGraph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Synchronicity Awareness Practice (Yijing)" />
+    <meta property="og:description" content="Authentic coin casting, 64 hexagrams interpretation, changing lines guidance, and presence session." />
+    <meta property="og:site_name" content="Synchronicity Awareness Practice" />
+    <meta property="og:image" content="/icon-512.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Synchronicity Awareness Practice (Yijing)" />
+    <meta name="twitter:description" content="Authentic coin casting, 64 hexagrams interpretation, changing lines guidance, and presence session." />
+    <meta name="twitter:image" content="/icon-512.png" />
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Synchronicity Awareness Practice (Yijing)",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "description": "Authentic coin casting, 64 hexagrams interpretation, changing lines guidance, and presence session based on the I Ching (Book of Changes).",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Noto+Serif+SC:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,4 +57,3 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-

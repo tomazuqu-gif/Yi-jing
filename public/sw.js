@@ -1,10 +1,19 @@
-const CACHE_NAME = "iching-oracle-v1";
-const ASSETS_TO_CACHE = ["/", "/index.html"];
+const CACHE_NAME = "yijing-practice-v2";
+const PRECACHE_ASSETS = [
+  "/",
+  "/index.html",
+  "/manifest.json",
+  "/favicon-32.png",
+  "/icon-192.png",
+  "/icon-512.png",
+  "/apple-touch-icon.png",
+  "/icon.svg"
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS_TO_CACHE);
+      return cache.addAll(PRECACHE_ASSETS);
     })
   );
   self.skipWaiting();
@@ -26,9 +35,37 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
+  // Only handle GET requests
+  if (event.request.method !== "GET") return;
+
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
-      return cachedResponse || fetch(event.request);
+      if (cachedResponse) {
+        // Fetch in background to revalidate cache for next time
+        fetch(event.request)
+          .then((networkResponse) => {
+            if (networkResponse && networkResponse.status === 200) {
+              const copy = networkResponse.clone();
+              caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+            }
+          })
+          .catch(() => {});
+        return cachedResponse;
+      }
+
+      return fetch(event.request).then((networkResponse) => {
+        if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== "basic") {
+          return networkResponse;
+        }
+        const copy = networkResponse.clone();
+        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+        return networkResponse;
+      }).catch(() => {
+        // If offline and request is HTML navigation, return cached index
+        if (event.request.mode === "navigate") {
+          return caches.match("/index.html");
+        }
+      });
     })
   );
 });

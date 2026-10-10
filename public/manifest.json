@@ -1,16 +1,38 @@
 {
-  "name": "I Ching Oracle - Book of Changes",
-  "short_name": "I Ching",
-  "description": "Authentic I Ching Oracle with classical coin casting, 64 hexagrams, and changing lines guidance.",
+  "id": "/",
+  "name": "Synchronicity Awareness Practice (Yijing)",
+  "short_name": "Yijing App",
+  "description": "Authentic coin casting, 64 hexagrams interpretation, changing lines guidance, and presence session.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#0c0a09",
-  "theme_color": "#d97706",
+  "orientation": "portrait",
+  "background_color": "#111827",
+  "theme_color": "#4b5563",
   "icons": [
     {
       "src": "/favicon-32.png",
       "sizes": "32x32",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
