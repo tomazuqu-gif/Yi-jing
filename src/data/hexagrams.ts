@@ -744,7 +744,7 @@ export const HEXAGRAMS: Record<number, HexagramData> = {
       1: "The wild goose gradually approaches the riverbank. The young one is in danger. There is talk. There is no fault.",
       2: "The wild goose approaches a rock. There is joyful eating and drinking. Good fortune.",
       3: "The wild goose gradually approaches dry land. The man marches (joins a military campaign) but does not return. The woman gets pregnant but does not nurture the child (or give birth). This is misfortune. It's beneficial to defend from the invaders.",
-      4: "The wild goose gradually draws near the tree. It may find a flat branch. No blame.",
+      4: "The wild goose gradually draws near the tree.  It may find a flat branch, there will be not error.",
       5: "The wild goose gradually draws near the summit. For three years the wife has no child. In the end nothing can thwart her. Good fortune.",
       6: "The wild geese gradually approach the cloud heights. Their feathers can be used in the sacred dance. Good fortune.",
     },
